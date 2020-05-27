@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYP</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container" data-aos="fade-down" data-aos-duration="600">
+      <div class="brand"><a href=""><img src="assets/img/MainLogo.png" alt=""></a></div>
+      <ul class="hide">
+        <li><a class="ls-02" href="">FAQ</a></li>
+        <li><a class="ls-02" href="">Location</a></li>
+        <li><a class="ls-02" href="">Contact</a></li>
+        <li><a class="active ls-02 c-white" href="">Donate</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero container">
+      <div class="left-hero" data-aos="fade-right" data-aos-duration="1000">
+        <div class="title c-white">
+          FIGHT CORONA VIRUS
+          #StayAtHome
+        </div>
+        <p class="ls-02">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s.
+        </p>
+        <div class="button">
+          <div class="btn-learn-more"><a class="ls-02" href="#">Learn More</a></div>
+          <div class="btn-contact-us"><a class="ls-02" href="#">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="right-hero hide" data-aos="fade-left" data-aos-duration="1000">
+        <img src="assets/img/illustration-head.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <a href="#" class="btn-scroll-top"><img src="assets/img/down-arrow.svg" width="25px" alt=""></a>
+
+  <div class="content">
+    <div class="title ls-02">
+      What must we do ?
+    </div>
+    <div class="cards container">
+      <div class="card" data-aos="fade-up" data-aos-duration="500">
+        <div class="content">
+          <img src="assets/img/wfh.png" alt="">
+          <h3>#StayAtHome</h3>
+          <p>Work from home, learn from home, and worship at home</p>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-duration="700">
+        <div class="content">
+          <img src="assets/img/wash.png" alt="">
+          <h3>Wash Hand</h3>
+          <p>Use soap and water for at least 20 seconds or use alcohol-based hand sanitizers for at least 60%</p>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-duration="900">
+        <div class="content">
+          <img src="assets/img/mask.png" alt="">
+          <h3>Wear a Mask</h3>
+          <p>If you have to do activities outside the home and replace it periodically</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      Created with ❤️ by Ananda Rizky Yuliansyah
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    window.onscroll = function () {
+      var scroll = document.documentElement.scrollTop;
+
+      if (scroll > 10) {
+        document.querySelector('nav').style.boxShadow = '0px 4px 4px #00000040'
+      } else {
+        document.querySelector('nav').style.boxShadow = 'none'
+      }
+
+      if (scroll > 170) {
+        document.querySelector('.btn-scroll-top').style.transform = 'translateX(0)'
+        document.querySelector('.btn-scroll-top').style.transition = '0.8s'
+      } else {
+        document.querySelector('.btn-scroll-top').style.transform = 'translateX(250px)'
+      }
+
+      console.log(scroll);
+    }
+  </script>
+</body>
+
+</html>
